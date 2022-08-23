@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"> <img src="images/logo-roar-bikes.png" alt="No Preview">  </a>
+            <p>Blog Posts</p>
+        </header>
+        <div class="grid-container">
+            <div class="main-content" id="main-content">
+                <h3>Have Something to Share? Write Down Here</h3>
+                <p>Science is the information about the earth, environmental factors and condition and the living creatures included. Science offers new data and disclosures of numerous things we don’t have a simple or naive idea. Step by step, science is advancing. Presently science has helped man arrive at the moon, which was once obscure to man as a satellite. Each creation in innovation or clinical methods depends on science and logical examination.
+                </p>
+                <p id="date">01-02-2007 | 02:30:43</p>
+                <hr>
+            </div>
+            <div class="aside">
+                <label for="title">Title</label>
+                <input type="text" placeholder="&nbsp;&nbsp;Add Title" id="title" >
+                <label for="description">Description</label>
+                <input type="text" id="description" placeholder="&nbsp;&nbsp;Add description" >
+                <button class="button" onclick="addPost()">Add Post</button>
+            </div>
+        </div>
+    </div>
+        
+    <script src="blogpost.js">
+    </script>
+    <style>body{
+        background-image: linear-gradient(rgb(181, 106, 137),rgb(117, 147, 184));
+        background-attachment: fixed;
+    }
+    
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        margin-top: 20px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        background-color: aliceblue;
+        padding: 0.7rem 2.3rem;
+    }
+    
+    header{
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 0.2rem 0.4rem;
+        cursor: pointer;   
+        color: gray; 
+    }
+    
+    .container img{
+        width: 4rem;
+        filter: invert(50%);
+    }
+    
+    .grid-container{
+        display: flex;
+    }
+    
+    .main-content{
+        flex: 2;
+        padding-right: 1.5rem;
+    }
+    
+    .main-content h3{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: rgba(36, 129, 205, 0.801);
+    }
+    
+    .main-content p {
+        margin-top: -0.5rem;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(9, 49, 81);
+    }
+    
+    .aside{
+        flex: 1;
+        padding: 2rem;
+        border-left: 1px solid rgba(228, 133, 133, 0.779);
+        margin-right: -2rem;
+    }
+    
+    input{
+        width: 100%;
+        margin: 5px 0px;
+        border: 2px solid rgba(228, 133, 133, 0.779);
+        border-radius: 5px;
+        padding: 10px 0px;
+    }
+    
+    label{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding-top: 10px;
+    }
+    
+    #description{
+        padding-bottom: 100px;
+    }
+    
+    .button{
+        float: right;
+        margin: 0.2rem 0rem;
+        background-color: rgba(181, 106, 137, 0.712);
+        padding: 0.4rem;
+        color: aliceblue;
+        border: 2px solid rgb(117, 147, 184);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .button:hover{
+        color: rgba(181, 106, 137, 0.712);
+        background-color: aliceblue;
+    }
+    
+    hr{
+        margin-top: 3rem;
+    }
+    
+    #date{
+        float: right;
+        font-size: 0.8rem;
+        color: gray;
+        margin-top: 0.2rem;
+    }</style>
+</body>
+</html>
+
+
+
+
+
+
+

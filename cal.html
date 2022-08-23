@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .sno{
+            width: 200px;
+            background-color: rgb(228, 192, 165);
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div >
+        First Number : <input class="sno" type="text" name="" id="fNo">
+    </div>
+    <br>
+    <div>
+        Second Number : <input class="sno" type="text" name="" id="sNo">
+    </div>
+    <br>
+    <button onclick="func()">Submit</button>
+
+
+    <script>
+        function func(){
+            var a=Number(document.getElementById("fNo").value)+Number(document.getElementById("sNo").value);
+            console.log(a);
+        }
+    </script>
+</body>
+</html>

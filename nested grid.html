@@ -1,0 +1,36 @@
+<!doctype html>
+<title>Example</title>
+<style>
+#outer-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8px;
+}
+#outer-grid > div {
+  background-color: royalblue;
+  color: white;
+  font-size: 4vw;
+  padding: 8px;
+}
+#inner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+#inner-grid > div {
+  background: red;
+  padding: 8px;
+}
+</style>
+<div id="outer-grid">
+  <div>Ashwin</div>
+  <div>Avinash</div>
+  <div>Srivatsava Sanjay</div>
+  <div id="inner-grid">
+    <div>Sathish</div>
+    <div>Aakash pawan</div>
+    <div>Aakash Nikhil</div>
+    <div>lokesh</div>
+  </div>
+</div>
